@@ -19,4 +19,14 @@ Project ini dirancang sebagai contoh implementasi **arsitektur backend modern**,
 ---
 
 ## 🧠 Arsitektur Sistem
+User
+└── Laravel App
+├── MySQL (data product)
+│ └── simpan: name, description, image_url
+└── Supabase Storage
+└── simpan: file gambar (object storage)
 
+📌 **Best Practice:**
+- Database ❌ tidak menyimpan file
+- Object Storage ✅ menyimpan file
+- Database hanya menyimpan **URL file**
